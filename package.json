@@ -29,7 +29,7 @@
     "io-ts": "1.8.5",
     "io-ts-reporters": "0.0.21",
     "ky": "0.9.1",
-    "lodash": "4.17.11",
+    "lodash": "4.17.13",
     "mobile-detect": "1.4.3",
     "mobx": "5.9.4",
     "mobx-react": "5.4.3",
