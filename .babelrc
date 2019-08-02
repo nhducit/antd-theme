@@ -1,0 +1,37 @@
+{
+  "presets": ["next/babel", "@zeit/next-typescript/babel"],
+  "plugins": [
+    "emotion",
+    "inline-react-svg",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "presets": ["next/babel"]
+    },
+    "development": {
+      "presets": [
+        [
+          "next/babel",
+          {
+            "preset-env": {
+              "targets": {
+                "browsers": "last 1 Chrome version",
+                "node": true
+              }
+            },
+            "transform-runtime": {
+              "regenerator": false
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
