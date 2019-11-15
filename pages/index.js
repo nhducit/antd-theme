@@ -16,7 +16,6 @@ import {
 } from "antd";
 import Router from "next/router";
 import * as React from "react";
-import { getLogin } from "../utils/auth";
 import { SiderComp } from "../components/SiderComp";
 import { TransferComp } from "../components/TransferComp";
 import { ModalComp } from "../components/ModalComp";
@@ -33,11 +32,6 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 export default function HomePage() {
-  React.useEffect(() => {
-    if (!getLogin().login) {
-      Router.replace("/login");
-    }
-  }, []);
   return (
     <div style={{ marginTop: 100 }}>
       <Form layout="horizontal">
