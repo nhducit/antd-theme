@@ -23,12 +23,12 @@ import { ModalComp } from "../components/ModalComp";
 const FormItem = Form.Item;
 const Option = Select.Option;
 
-const children = [];
+const children: any = [];
 for (let i = 10; i < 36; i++) {
   children.push(<Option key={i.toString(36) + i}>{i.toString(36) + i}</Option>);
 }
 
-function handleChange(value) {
+function handleChange(value: any) {
   console.log(`selected ${value}`);
 }
 export default function HomePage() {
@@ -154,7 +154,7 @@ export default function HomePage() {
   );
 }
 
-function CompHeader({ children }) {
+function CompHeader({ children }: { children: any }) {
   return <h1 style={{ marginTop: 32 }}>{children}</h1>;
 }
 
