@@ -20,6 +20,6 @@
     "**/*.ts",
     "**/*.tsx",
     "components/SiderComp.js",
-    "pages/index.js"
+    "pages/index.tsx"
   ]
 }
